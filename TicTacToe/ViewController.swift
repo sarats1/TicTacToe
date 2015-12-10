@@ -20,19 +20,85 @@ class ViewController: UIViewController {
     @IBOutlet weak var bm: UIImageView!
     @IBOutlet weak var br: UIImageView!
     
+    var tlv: Bool?
+    var trv: Bool?
+    var tmv: Bool?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer2 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer3 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer4 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer5 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer6 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer7 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer8 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        let tapGestureRecognizer9 = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        
+        
         
         // TODO 1: Add the other squares to the gesture recognizer
         
-        tl.addGestureRecognizer(tapGestureRecognizer)
+        tl.addGestureRecognizer(tapGestureRecognizer1)
+        tm.addGestureRecognizer(tapGestureRecognizer2)
+        tr.addGestureRecognizer(tapGestureRecognizer3)
+        
+        ml.addGestureRecognizer(tapGestureRecognizer4)
+        mm.addGestureRecognizer(tapGestureRecognizer5)
+        mr.addGestureRecognizer(tapGestureRecognizer6)
+
+        bl.addGestureRecognizer(tapGestureRecognizer7)
+        bm.addGestureRecognizer(tapGestureRecognizer8)
+        br.addGestureRecognizer(tapGestureRecognizer9)
+
+        
     }
+    
+    func saveMove(imageView:UIImageView)
+    {
+        switch imageView {
+        case tl: tlv = drawX
+        case tr: trv = drawX
+        case tm: tbv = drawX
+        default: break
+            
+            
+        }
+    }
+    
+    var drawX = true
+
 
     func imageTapped(sender: AnyObject)
     {
         print("image tapped")
+       
+        
+        
+        if drawX {
+            
+            let gesture = sender as! UITapGestureRecognizer
+            let tappedImage = gesture.view as! UIImageView
+            saveMove(tappedImage)
+            drawX = false
+            
+            tappedImage.image = UIImage(named: "x")
+            
+        }
+        else{
+            
+            let gesture = sender as! UITapGestureRecognizer
+            let tappedImage = gesture.view as! UIImageView
+            saveMove(tappedImage)
+            drawX = true
+            tappedImage.image = UIImage(named: "o")
+        }
+        
+       // if
+        
+        
 
         // TODO 2: Connect the gesture recognizer to the logic class
         

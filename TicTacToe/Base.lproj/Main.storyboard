@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,9 +19,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v83-kV-4I6">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <subviews>
-                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="2oe-6M-nrV" userLabel="tl">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2oe-6M-nrV" userLabel="tl">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="fnJ-dE-v6J"/>
                                             <constraint firstAttribute="width" constant="100" id="oUC-dU-4fG"/>
@@ -29,31 +28,25 @@
                                     </imageView>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="Lj2-zu-U6a" userLabel="tm">
                                         <rect key="frame" x="100" y="0.0" width="100" height="100"/>
-                                        <animations/>
                                     </imageView>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="yJT-gR-jlt" userLabel="tr">
                                         <rect key="frame" x="200" y="0.0" width="100" height="100"/>
-                                        <animations/>
                                     </imageView>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="qjD-Gl-UO1" userLabel="ml">
                                         <rect key="frame" x="0.0" y="100" width="100" height="100"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="8ya-ti-Q30"/>
                                             <constraint firstAttribute="height" constant="100" id="JF0-Jn-EJM"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="qPl-uQ-7rT" userLabel="mm">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qPl-uQ-7rT" userLabel="mm">
                                         <rect key="frame" x="100" y="100" width="100" height="100"/>
-                                        <animations/>
                                     </imageView>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="RQe-ug-lYq" userLabel="mr">
                                         <rect key="frame" x="200" y="100" width="100" height="100"/>
-                                        <animations/>
                                     </imageView>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="EaD-LE-n0H" userLabel="bl">
                                         <rect key="frame" x="0.0" y="200" width="100" height="100"/>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="Kjh-Ue-Vkv"/>
                                             <constraint firstAttribute="height" constant="100" id="vH3-cI-d5S"/>
@@ -61,14 +54,11 @@
                                     </imageView>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="kvi-qd-3Fu" userLabel="bm">
                                         <rect key="frame" x="100" y="200" width="100" height="100"/>
-                                        <animations/>
                                     </imageView>
                                     <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="TT1-Td-Df6" userLabel="br">
                                         <rect key="frame" x="200" y="200" width="100" height="100"/>
-                                        <animations/>
                                     </imageView>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Lj2-zu-U6a" firstAttribute="height" secondItem="2oe-6M-nrV" secondAttribute="height" id="2rh-wF-HHu"/>
@@ -106,7 +96,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="v83-kV-4I6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Quh-mR-9gn"/>
@@ -139,7 +128,6 @@
                     <view key="view" contentMode="scaleToFill" id="Vat-3Q-xf8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
